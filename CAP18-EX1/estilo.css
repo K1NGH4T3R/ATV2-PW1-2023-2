@@ -1,0 +1,30 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem {
+    width: 15%; 
+    box-sizing: border-box; 
+    padding: 5px; 
+}
+
+.imagem img {
+    width: 100%; 
+    height: auto;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.principal img {
+    width: 25%; 
+    height: auto;
+}

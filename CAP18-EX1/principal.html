@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/CAP18-EX1/estilo.css">
+</head>
+<body>
+    <div class="principal" id="principal"> 
+        <img src="/CAP18-EX1/imagens/1.jpg"> 
+    </div>
+
+    <div class="galeria">
+        <div class="imagem"> <img src="/CAP18-EX1/imagens/1.jpg" onmouseover="trocarImagem(this.src)"> </div>
+        <div class="imagem"> <img src="/CAP18-EX1/imagens/2.jpg" onmouseover="trocarImagem(this.src)"> </div>
+        <div class="imagem"> <img src="/CAP18-EX1/imagens/3.jpg" onmouseover="trocarImagem(this.src)"> </div>
+        <div class="imagem"> <img src="/CAP18-EX1/imagens/4.jpg" onmouseover="trocarImagem(this.src)"> </div>
+    </div>
+
+    <script>
+        function trocarImagem(src) {
+            document.getElementById('principal').innerHTML = `<img src="${src}" onmouseover="manterImagem(this.src)">`;
+        }
+        function manterImagem(src) {
+            document.getElementById('principal').innerHTML = `<img src="${src}" onmouseover="trocarImagem(this.src)">`;
+        }
+    </script>
+</body>
+</html>

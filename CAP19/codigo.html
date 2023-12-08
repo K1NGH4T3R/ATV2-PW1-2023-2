@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ex19</title>
+</head>
+<body>
+    <div id="p1">
+        <button class="btnImpar">B1</button>
+        <button class="btnPar">B2</button>
+        <button class="btnImpar">B3</button>
+        <button class="btnPar">B4</button>
+        <button class="btnImpar">B5</button>
+        <button class="btnPar">B6</button>
+        <button class="btnImpar">B7</button>
+        <button class="btnPar">B8</button>
+    </div>
+
+    <div id="p2">
+        <form>
+            <label id="lbl">Nome:</label>
+            <input type="text" name="nomePessoa" value="Digite o seu nome">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <script>
+
+        /* QUESTÃO A */
+        var elementosPar = document.getElementsByClassName('btnPar');
+        for (var i = 0; i < elementosPar.length; i++) {
+            elementosPar[i].style.color = 'red';
+        }
+
+        /* QUESTÃO B */
+        var elementosNomePessoa = document.getElementsByName('nomePessoa');
+        for (var i = 0; i < elementosNomePessoa.length; i++) {
+            elementosNomePessoa[i].style.backgroundColor = 'yellow';
+        }
+
+        /* QUESTÃO C */
+        var botoes = document.getElementsByTagName('button');
+        for (var i = 0; i < botoes.length; i++) {
+            botoes[i].style.backgroundColor = 'black';
+        }
+
+        /* QUESTÃO D */
+        var elementoLbl = document.getElementById('lbl');
+        elementoLbl.style.color = 'pink';
+
+        /* QUESTÃO E */
+        var primeiroBotao = document.querySelector('button');
+        primeiroBotao.style.color = 'white';
+    </script>
+</body>
+</html>

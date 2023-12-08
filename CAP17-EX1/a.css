@@ -1,0 +1,18 @@
+.tabela {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.linha {
+    display: table-row;
+}
+
+.celula {
+    display: table-cell;
+    padding: 8px;
+}
+
+.zebrada:nth-child(even) {
+    background-color: #f2f2f2;
+}
